@@ -1,0 +1,582 @@
+.header {
+    min-width: 900px;
+    height: 60px;
+    background: #5944C3;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.Personal_information {
+    float: right;
+    width: 300px;
+    height: 60px;
+    position: relative;
+}
+
+.headers:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.headers {
+    min-width: 600px;
+}
+
+.peravator {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 10px;
+    left: 1px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.pernames {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.Arrow {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 22px;
+    left: 120px;
+    transition-property: height;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.Arrow:hover {
+    transform: rotate(180deg);
+    transition: transform 2s;
+}
+
+.My_order {
+    position: absolute;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top: 20px;
+    left: 200px;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+    width: 400px;
+    height: 60px;
+}
+
+.logoimg {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.emple {
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    border-left: 2px solid #FFFFFF;
+}
+
+.hotelproject {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    float: right;
+    margin-top: 13px;
+    margin-right: 120px;
+}
+
+.supernatant {
+    width: 109px;
+    height: 124.7px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.supernatants {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border-width: 10px;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-style: solid;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.supernatant1,
+.supernatant2,
+.supernatant3 {
+    width: 109px;
+    height: 30px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.img1,
+.img2,
+.img3 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.span1,
+.span2,
+.span3 {
+    float: right;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 20px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.footer {
+    min-width: 900px;
+    height: 60px;
+    background: #5944C3;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.section {
+    width: 1016px;
+    margin: 0 auto;
+    margin-top: 31px;
+    margin-bottom: 200px;
+}
+
+.left {
+    width: 305px;
+    float: left;
+}
+
+.right {
+    width: 691px;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.18);
+    float: right;
+    margin-left: 16px;
+}
+
+.images {
+    width: 305px;
+    height: 234px;
+}
+
+.section:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.bighotel {
+    font-family: HiraginoSansGB-W6;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-top: 23px;
+}
+
+.address {
+    width: 305px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #3E3E3E;
+    margin-top: 9px;
+}
+
+.phone {
+    width: 305px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 15px;
+    padding-bottom: 9px;
+}
+
+.messages {
+    width: 305px;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.bigroom {
+    display: inline-block;
+    width: 305px;
+    font-family: HiraginoSansGB-W6;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 15px;
+}
+
+.Bed_typea {
+    display: inline-block;
+    width: 305px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 14px;
+}
+
+.areaa {
+    display: inline-block;
+    width: 305px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 9px;
+}
+
+.broadbanda {
+    display: inline-block;
+    width: 305px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 9px;
+}
+
+.breakfasta {
+    display: inline-block;
+    width: 305px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 9px;
+}
+
+.Predetermined_information {
+    display: inline-block;
+    width: 691px;
+    font-family: HiraginoSansGB-W6;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-top: 24px;
+    padding-left: 22px;
+}
+
+.House_name {
+    display: inline-block;
+    width: 691px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.Check_intime {
+    display: inline-block;
+    width: 691px;
+    padding-left: 25px;
+    margin-top: 24px;
+}
+
+.Check_intimes {
+    display: inline-block;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.Checkin1 {
+    width: 227px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: HiraginoSansGB-W6;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.checkspan {
+    display: inline-block;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-left: 12px;
+}
+
+.Checkin2 {
+    width: 227px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-left: 12px;
+    font-family: HiraginoSansGB-W6;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.Numberofroom {
+    display: inline-block;
+    width: 691px;
+    margin-left: 25px;
+    margin-top: 14px;
+    position: relative;
+}
+
+.Numberofrooms {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.Numberroom {
+    width: 180px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    color: #1F2D3D;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.Totalcost {
+    display: inline-block;
+    width: 391px;
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-bottom: 26px;
+}
+
+.Totalcosts {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.cost {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.costs {
+    font-family: HiraginoSansGB-W6;
+    font-size: 18px;
+    color: #000009;
+    line-height: 21px;
+}
+
+.one {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.Checkininformation {
+    display: inline-block;
+    width: 691px;
+    font-family: HiraginoSansGB-W6;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-top: 24px;
+    margin-left: 17px;
+}
+
+.GU,
+.CT {
+    display: inline-block;
+    width: 691px;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+.CT {
+    margin-bottom: 25px;
+}
+
+.Guestname,
+.Contactnumber {
+    color: #FF4949;
+}
+
+.Guestnames,
+.Contactnumbers {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.Guests,
+.Contact {
+    width: 180px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #FF4949;
+    border-radius: 4px;
+}
+
+.two {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.invoice {
+    display: inline-block;
+    width: 691px;
+    margin-top: 19px;
+    margin-left: 17px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.Needpay {
+    display: inline-block;
+    width: 150px;
+}
+
+.needpays {
+    width: 150xp;
+    float: right;
+}
+
+.thr:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.Needtopay {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.Needtopays {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.pay {
+    font-family: HiraginoSansGB-W6;
+    font-size: 18px;
+    color: #FF4949;
+    letter-spacing: 0;
+    line-height: 17px;
+    width: 35px;
+    height: 24px;
+    border: none;
+}
+
+.Order {
+    width: 113px;
+    height: 36px;
+    background: #5944C3;
+    border-radius: 3px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    border: 1px solid #5944C3;
+    margin-top: 24px;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.redues {
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    left: 190px;
+    cursor: pointer;
+    text-align: center;
+    border-left: 1px solid #C0CCDA;
+    border-right: 1px solid #C0CCDA;
+}
+
+.add {
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    left: 225px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.inspan1 {
+    position: relative;
+}
+
+.weekspan01 {
+    position: absolute;
+    top: 0.1px;
+    left: 145px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.imgspan01 {
+    position: absolute;
+    top: 0.1px;
+    left: 200px;
+}
+
+.inspan2 {
+    position: relative;
+}
+
+.weekspan02 {
+    position: absolute;
+    top: 0.1px;
+    left: 155px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.imgspan02 {
+    position: absolute;
+    top: 0.1px;
+    left: 210px;
+}

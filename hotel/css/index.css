@@ -1,0 +1,790 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.maxdiv {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.bgimg {
+    width: 1536px;
+    height: 322px;
+    background: url("../img/jiudian.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 322px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    opacity: 0.8;
+    background: #5944C3;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.headerbox {
+    min-width: 600px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logobox {
+    width: 600px;
+    height: 60px;
+    position: absolute;
+}
+
+.logo {
+    width: 600px;
+    height: 60px;
+    position: relative;
+}
+
+.logo img {
+    width: 76.8px;
+    height: 25px;
+    position: absolute;
+    left: 40px;
+    top: 18px;
+}
+
+.logoemp {
+    display: inline-block;
+    width: 17px;
+    height: 24px;
+    border-left: 2px solid #FFFFFF;
+    position: absolute;
+    left: 128px;
+    top: 19px;
+}
+
+.logospan {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    width: 109px;
+    height: 33px;
+    position: absolute;
+    left: 137px;
+    top: 14px;
+}
+
+.loginregbox {
+    width: 150px;
+    position: absolute;
+    left: 1200px;
+}
+
+.loginreg {
+    width: 150px;
+    height: 60px;
+    position: relative;
+}
+
+.reg {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.login {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    left: 75px;
+    top: 20px;
+}
+
+
+/*三个input框*/
+
+.choicecityin {
+    width: 240px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;
+    letter-spacing: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.choicedatein {
+    width: 240px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;
+    letter-spacing: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.choicemessagein {
+    width: 240px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;
+    letter-spacing: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.choicecity {
+    width: 240px;
+    height: 40px;
+    position: relative;
+}
+
+.choicecityin {
+    position: absolute;
+}
+
+.choicecity img {
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.choicedate {
+    width: 240px;
+    height: 40px;
+    position: relative;
+}
+
+.choicedatein {
+    position: absolute;
+}
+
+.choicedate img {
+    position: absolute;
+    left: 220px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.choicecity {
+    width: 240px;
+    height: 40px;
+    position: relative;
+}
+
+.threeinput {
+    width: 1400px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+.choicecitybox {
+    position: absolute;
+    left: 300px;
+}
+
+.choicedatebox {
+    position: absolute;
+    left: 600px;
+}
+
+.choicemessagebox {
+    position: absolute;
+    left: 900px;
+}
+
+
+/*城市列表*/
+
+.ajaxcity {
+    position: absolute;
+}
+
+.ajaxcitylist {
+    width: 480px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.navigation_bar {
+    width: 514px;
+    height: 43px;
+    z-Index: 99999999;
+}
+
+.navigation_bar span {
+    display: inline-block;
+    width: 70px;
+    height: 43px;
+    margin-right: 3px;
+    line-height: 43px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ajaxlist {
+    width: 515px;
+    height: 120px;
+    clear: both;
+}
+
+
+/*搜索按钮*/
+
+.search {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.btn {
+    background: #5944C3;
+    border-radius: 2px;
+    border: none;
+    width: 81px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.ajaxlist1 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlist2 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlist3 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlist4 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlist5 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlist6 {
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.ajaxlistrm {
+    padding-left: 20px;
+}
+
+.ajaxlistxz {
+    padding-left: 20px;
+}
+
+.ajaxlistrw {
+    padding-left: 20px;
+}
+
+.ajaxlistlq {
+    padding-left: 20px;
+}
+
+.ajaxlistgk {
+    padding-left: 20px;
+}
+
+.ajaxlistaf {
+    padding-left: 20px;
+}
+
+.li-list0 {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li-list {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li-list1 {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li-list2 {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li-list3 {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li-list4 {
+    width: 76px;
+    height: 30px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+/*时间选择器*/
+
+.choicetimes {
+    width: 515px;
+    height: 258px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    position: relative;
+}
+
+.choicetimes1 {
+    width: 257px;
+    height: 258px;
+    background: #FFFFFF;
+    border-right: 1px solid #E0E6ED;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.choicetimes2 {
+    width: 257px;
+    height: 258px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    position: absolute;
+    left: 257px;
+}
+
+.ulli {
+    padding: 0px;
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.ulli:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ulli li {
+    float: left;
+    list-style-type: none;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    margin-right: 20.9px;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.hothotel {
+    padding-right: 44px;
+}
+
+.hr {
+    width: 1010px;
+    height: 1px;
+    border: 1px solid #5944C3;
+    background: #5944C3;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.hotelslist {
+    width: 220px;
+    height: 220px;
+    float: left;
+    margin-right: 32.5px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.Dynamicl {
+    width: 1010px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.insideboxlist {
+    width: 220px;
+    height: 68px;
+    background: rgba(255, 255, 255, 0.84);
+    margin-top: 152px;
+}
+
+.empt {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 250px;
+    margin-left: 450px;
+}
+
+.Deluxe {
+    margin-left: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.hotelnames {
+    display: inline-block;
+    width: 126.5px;
+    margin-left: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.pricehotels {
+    margin-top: 5px;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #FB430A;
+}
+
+.pricehotel {
+    margin-left: 14px;
+}
+
+.supernatants {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border-width: 7px;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-style: solid;
+    float: left;
+    margin-left: 35px;
+}
+
+.arrows {
+    width: 1010px;
+    height: 14px;
+    margin: 0 auto;
+}
+
+.arrowsul {
+    width: 800px;
+    margin-left: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.arrowsul:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #5944C3;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ul-listrm:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-list:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-listgk:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-listlq:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-listrw:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-listxz:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ul-list,
+.ul-listgk,
+.ul-listlq,
+.ul-listrw,
+.ul-listxz,
+.ul-listrm {
+    padding-left: 0px;
+}
+
+.header1 {
+    width: 100%;
+    height: 60px;
+    background: #5944C3;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.Personal_information {
+    float: right;
+    width: 300px;
+    height: 60px;
+    position: relative;
+}
+
+.headers:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.headers {
+    min-width: 600px;
+}
+
+.peravator {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 10px;
+    left: 1px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.pernames {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.Arrow {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 22px;
+    left: 120px;
+    transition-property: height;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.Arrow:hover {
+    transform: rotate(180deg);
+    transition: transform 2s;
+}
+
+.My_order {
+    position: absolute;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top: 20px;
+    left: 200px;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+    width: 400px;
+    height: 60px;
+}
+
+
+/* .logoimg1 {
+    margin-left: 70px;
+    margin-top: 15px;
+} */
+
+.emple {
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    border-left: 2px solid #FFFFFF;
+    position: absolute;
+    top: 17px;
+    left: 160px;
+}
+
+.hotelproject {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    float: right;
+    margin-top: 13px;
+    margin-right: 120px;
+}
+
+.supernatant {
+    width: 109px;
+    height: 124.7px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.supernatants1 {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border-width: 10px;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-style: solid;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.supernatant1,
+.supernatant2,
+.supernatant3 {
+    width: 109px;
+    height: 30px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.img1,
+.img2,
+.img3 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.span1,
+.span2,
+.span3 {
+    float: right;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 20px;
+    margin-top: 1px;
+    cursor: pointer;
+}

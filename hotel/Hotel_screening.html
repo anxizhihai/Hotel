@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=B948NQq1qIlkU0P8dtRV2YBeDjs57ZbD"></script>
+</head>
+
+<body>
+    <div class="maxdiv">
+        <!--页头-->
+        <div class="header">
+            <div class="headerbox">
+                <div class="logo">
+                    <img src="img/logo_white.png">
+                    <span class="logoemp"></span>
+                    <span class="logospan">酒店项目</span>
+                </div>
+                <div class="loginreg">
+                    <a class="login">登录</a>
+                    <a class="reg">注册</a>
+                </div>
+            </div>
+        </div>
+        <header class="header1">
+            <div class="headerbox1">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img16" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img26" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img36" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--内容-->
+        <div class="threeinput">
+            <div class="choicecitybox">
+                <div class="choicecity"> <input id="tresult" class="choicecityin" style="text-indent:1em;" type="text" readonly="true" placeholder="请选择城市"><img class="onclickimg" src="img/icon_location.png"></div>
+                <!--城市列表-->
+                <div class="ajaxcity">
+                    <div class="ajaxcitylist" style="display:none">
+                        <div class="navigation_bar">
+                            <span class="navigation1">热门</span>
+                            <span class="navigation2">ABCDEF</span>
+                            <span class="navigation3">GHJK</span>
+                            <span class="navigation4">LMNPQ</span>
+                            <span class="navigation5">RSTW</span>
+                            <span class="navigation6">XYZ</span>
+                        </div>
+                        <div>
+                            <div class="ajaxlist1">
+                                <div class="ajaxlistrm">
+                                    <ul class="ul-listrm" id="tcontent">
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--abcdef-->
+                            <div class="ajaxlist2" style="display:none">
+                                <div class="ajaxlistaf">
+                                    <ul class="ul-list"></ul>
+                                </div>
+                            </div>
+                            <!--ghjk-->
+                            <div class="ajaxlist3" style="display:none">
+                                <div class="ajaxlistgk">
+                                    <ul class="ul-listgk"></ul>
+                                </div>
+                            </div>
+                            <!--lmnpq-->
+                            <div class="ajaxlist4" style="display:none">
+                                <div class="ajaxlistlq">
+                                    <ul class="ul-listlq"></ul>
+                                </div>
+                            </div>
+                            <!--rstw-->
+                            <div class="ajaxlist5" style="display:none">
+                                <div class="ajaxlistrw">
+                                    <ul class="ul-listrw"></ul>
+                                </div>
+                            </div>
+                            <!--xyz-->
+                            <div class="ajaxlist6" style="display:none">
+                                <div class="ajaxlistxz">
+                                    <ul class="ul-listxz"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choicedatebox">
+                <div class="choicedate"><input class="choicedatein" id="choicedatein" style="text-indent:1em;" type="text" readonly="true" placeholder="请选择日期"><img src="img/icon_day.png"></div>
+                <!--日期选择器-->
+                <div class="choicetimes" style="display:none">
+                    <div class="choicetimes1"></div>
+                    <div class="choicetimes2"></div>
+                </div>
+            </div>
+            <div class="choicemessagebox">
+                <div class="choicemessage"><input class="choicemessagein" style="text-indent:1em;" type="text" placeholder="酒店名称/位置/关键字"></div>
+            </div>
+            <!--搜索-->
+            <div class="search">
+                <div class="searchbutton"><button class="btn" type="button">搜索</button></div>
+            </div>
+        </div>
+        <!--位置价格-->
+        <div class="choice_box">
+            <div class="choice_boxpos">
+                <div class="choice_boxs">
+                    <div class="choice_boxs1">
+                        <div class="choicebox">
+                            <span class="choice_boxs1span1">位置</span>
+                            <span class="choice_boxs1span2">不限</span>
+                            <span class="choice_boxs1span3">行政区<img class="aimgs" src="img/icon_down.png"><div class="district" style="display:none" >
+                                <ul class="districtul"></ul>
+                            </div></span>
+                            <span class="choice_boxs1span4">商圈<img class="aimgs1" src="img/icon_down.png"><div class="Business_Circles" style="display:none">
+                                <ul class="Business_Circlesul"></ul>
+                            </div></span>
+                            <span class="choice_boxs1span5">地铁站<img class="aimgs2" src="img/icon_down.png">
+                           </span>
+                            <div class="dstation" style="display:none">
+                            </div>
+                            <span class="choice_boxs1span6">车站<img class="aimgs3" src="img/icon_down.png"><div class="Station" style="display:none" >
+                               <div class="Station1"><img > <ul class="Stationul1"></ul></div>
+                               <div class="Station2"><img>  <ul class="Stationul2"></ul></div>
+                               <div class="Station3"><img>  <ul class="Stationul3"></ul></div>
+                            </div></span>
+                            <span class="choice_boxs1span7">景点<img class="aimgs4" src="img/icon_down.png"><div class="Scenic" style="display:none">
+                                <ul class="Scenic_ul"></ul>
+                            </div></span>
+                            <div class="Metro_Station" style="display:none">
+                                <div class="Line_number"><span class="Line_number1">1号线</span><span class="Line_number2">2号线</span><span class="Line_number3">3号线</span></div>
+                                <ul class="Metro_Stationul1"></ul>
+                                <ul class="Metro_Stationul2" style="display:none"></ul>
+                                <ul class="Metro_Stationul3" style="display:none"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice_boxs2">
+                        <div class="choicetwo">
+                            <span class="prices">价格</span>
+                            <span class="anyprices">不限</span>
+                            <span class="prices1"><input class="pricess" type="radio" name="names"id="img1"  value="1"><label for="img1"><img class="img1"  src="img/icon_checkbox.png"></label>100元以下</span>
+                            <span class="prices2"><input class="pricess1" type="radio" name="names" id="img2" value="2"><label for="img2"><img class="img2"  src="img/icon_checkbox.png"></label>100-300</span>
+                            <span class="prices3"><input class="pricess2" type="radio" name="names" id="img3" value="3"><label for="img3"><img class="img3"  src="img/icon_checkbox.png"></label>300-600</span>
+                            <span class="prices4"><input class="pricess3" type="radio" name="names" id="img4" value="4"><label for="img4"><img class="img4"  src="img/icon_checkbox.png"></label>600-100</span>
+                            <span class="prices5"> 自定义<input class="pricesin" type="text">-<input class="pricesinp" type="text"><button class="pricebutton" type="button">确定</button></span>
+                        </div>
+                    </div>
+                    <div class="choice_boxs3">
+                        <div class="starthree">
+                            <span class="Star">星级</span>
+                            <span class="everyprice">不限</span>
+                            <span class="Star1"><input type="radio" class="starss" name="stars" id="Stars11" value="1"><label for="Stars11"><img class="starimgs1"  src="img/icon_checkbox.png"></label>五星/豪华</span>
+                            <span class="Star2"><input type="radio" class="starss" name="stars" id="Stars12" value="2"><label for="Stars12"><img class="starimgs2"  src="img/icon_checkbox.png"></label>四星/高档</span>
+                            <span class="Star3"><input type="radio" class="starss" name="stars" id="Stars13" value="3"><label for="Stars13"><img class="starimgs3"  src="img/icon_checkbox.png"></label>三星/舒适</span>
+                            <span class="Star4"><input type="radio" class="starss" name="stars" id="Stars14" value="4"><label for="Stars14"><img class="starimgs4"  src="img/icon_checkbox.png"></label>二星及以下</span>
+                            <span class="Star5"><input type="radio" class="starss" name="star" id="Star15" value="1"><label for="Star15"><img class="starimgs11"  src="img/icon_checkbox.png"></label>经济连锁</span>
+                            <span class="Star6"><input type="radio" class="starss" name="star" id="Star16" value="2"><label for="Star16"><img class="starimgs12"  src="img/icon_checkbox.png"></label>客栈公寓</span>
+                        </div>
+                    </div>
+                    <div class="choice_boxs4">
+                        <div class="brandsfour">
+                            <span class="brand">品牌</span>
+                            <span class="Unlimited">不限</span>
+                            <span class="brands1"><input type="checkbox" name="brads" id="brads1" class="brads1" value="如家快捷"><label for="brads1"><img class="bradsimg1"  src="img/icon_checkbox.png"></label> 如家快捷</span>
+                            <span class="brands2"><input type="checkbox" name="brads" id="brads2" class="brads2" value="汉庭酒店"><label for="brads2"><img class="bradsimg2"  src="img/icon_checkbox.png"></label>汉庭酒店</span>
+                            <span class="brands3"><input type="checkbox" name="brads" id="brads3" class="brads3" value="七天连锁"><label for="brads3"><img class="bradsimg3"  src="img/icon_checkbox.png"></label>七天连锁</span>
+                            <span class="brands4"><input type="checkbox" name="brads" id="brads4" class="brads4" value="锦江之星"><label for="brads4"><img class="bradsimg4"  src="img/icon_checkbox.png"></label>锦江之星</span>
+                            <span class="brands5"><input type="checkbox" name="brads" id="brads5" class="brads5" value="布丁"><label for="brads5"><img class="bradsimg5"  src="img/icon_checkbox.png"></label>布丁</span>
+                            <span class="brands6"><input type="checkbox" name="brads" id="brads6" class="brads6" value="速8"><label for="brads6"><img class="bradsimg6"  src="img/icon_checkbox.png"></label>速8</span>
+                            <span class="bradns7">更多<img src="img/icon_down.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommend">
+            <span class="recommend1">推荐</span>
+            <span class="recommend2"><span class="re1">评价</span><img class="recommend22" src="img/icon_arrow_down1.png"></span>
+            <span class="recommend3"><span class="re2">价格</span><img class="recommend32" src="img/icon_arrow_down1.png"></span>
+            <span class="recommend4"><span class="re3">距离</span><img class="recommend42" src="img/icon_arrow_up1.png"></span>
+        </div>
+
+        <div class="dynamiclists">
+            <div class="mapone" id="container"></div>
+        </div>
+        <div class="dynamiclistsbox">
+
+            <div class="dynamiclists1" style="display:none"></div>
+            <div class="container1c" id="container1" style="display:none"></div>
+
+        </div>
+        <div class="loading" id="loading">
+            <img class="loadings" src="img/loading.gif">
+        </div>
+        <!--页脚-->
+        <footer class="footer">
+            <div class="footers"><span></span>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号- 3</div>
+        </footer>
+    </div>
+</body>
+<link href="css/Hotel_screening.css" rel="stylesheet" type="text/css" />
+<script src="js/laydate.js"></script>
+
+<script src="js/Hotel_screening.js"></script>
+<script src="js/Hotel_screeningstyle.js"></script>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>酒店详情页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=B948NQq1qIlkU0P8dtRV2YBeDjs57ZbD"></script>
+
+</head>
+
+<body>
+    <div class="divmain">
+        <header class="header">
+            <div class="headerbox">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="namemessages">
+                <div class="message">
+                    <span class="hotelnames"> 西安开元名都大酒店</span> <span><img src="img/icon_star.png"><img src="img/icon_star.png"></span><br>
+                    <span class="address">碑林区友谊东路33号，西藏驻西安办事处家属院内</span><span class="map">-地图</span>
+                </div>
+                <div class="prices">
+                    <span class="pricesfh">￥</span> <span class="pricesnum">4888</span><span class="priceswor">起</span>
+                </div>
+                <div class="scorebox">
+                    <div class="score">
+                        &nbsp;&nbsp; <span class="fournine">4.9</span><span class="fivescore">/5分</span><br>
+                        <span class="fivesix">1156</span><span class="review">次点评</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+                <img class="image1" src="img/jiudian.jpg">
+                <div class="im">
+                    <img class="image2" src="img/jiudian.jpg">
+                    <img class="image3" src="img/jiudian.jpg">
+                    <img class="image4" src="img/jiudian.jpg">
+                    <img class="image5" src="img/jiudian.jpg">
+                </div>
+            </div>
+            <div class="room">
+                <span class="room1">房型预定</span>
+                <span class="room2">酒店信息</span>
+                <span class="room3">交通位置</span>
+                <span class="room4">用户评价</span>
+            </div>
+            <div class="querytimes">
+                <span class="Check">入住</span>
+                <span class="firsttime">
+                <input type="text" class="queryinput1" id="queryinput1" placeholder="请选择入住日期"><span class="firsttime1"></span><img class="firsttime2" src="img/icon_day.png">
+                </span>
+                <span class="Check_out">退房</span>
+                <span class="secondtime">
+                <input type="text" class="queryinput2" id="queryinput2" placeholder="请输入退房日期"><span class="secondtime1"></span><img class="secondtime2" src="img/icon_day.png">
+                </span>
+                <span class="all">共</span><span class="alldates">0</span><span class="night">晚</span>
+                <button type="button" class="btnquery">查询</button>
+            </div>
+            <div class="Details">
+                <div class="house">
+                    <span class="house1">房型详情</span><span class="house2">床型</span><span class="house3">面积</span><span class="house4">上网方式</span><span class="house5">早餐</span><span class="house6">窗户</span><span class="house7">取消规则</span><span class="house8">房价</span>
+                </div>
+
+            </div>
+            <!--酒店介绍-->
+            <div class="Hotel_Introduction">
+                <span class="Introduction">酒店介绍</span>
+                <div class="words_Introduction">
+                    <span class="words_Introduction1">2007年开业 </span><span class="words_Introduction2">2007年装修</span><span class="words_Introduction3"> 393间房</span><span class="words_Introduction4"> 电话029-87381606</span><span class="words_Introduction5"> 传真029-87381606</span>
+                    <span class="words_Introductionxa" style="text-indent:2em">西安开元名都大酒店座落于西安市高新技术产业开发区腹地，毗邻市内最具规模的商业区及高级娱乐购物区。诸多著名的旅游名胜，包括秦始皇兵马俑及西安古城墙都可从酒店轻松到达。 酒店拥有各类设计独特的豪华客房及套房，客房别具气势的落地式长窗，让您饱览城市如画的风光和酒店的园林景致。酒店的四间风格迥异的餐厅和酒吧，让您可享受到来自各地颇富盛名的厨师们亲自为您烹饪的诱人美食。
+                    </span></div>
+                <span class="Hotel_facilities">酒店设施</span>
+                <div class="comprehensive">
+                    <span class="comprehensive1">综合设施</span>
+                    <span class="comprehensive2">  <img class="comprehensive3" src="img/icon_parking.png">停车场</span>
+                    <span class="comprehensive4"><img class="comprehensive5" src="img/icon_wind.png">吸烟区</span>
+                    <span class="comprehensive6"><img class="comprehensive7" src="img/icon_help.png">残疾人设施</span>
+                    <span class="comprehensive8"> <img class="comprehensive9" src="img/icon_noodle.png">中餐</span>
+                    <span class="comprehensive10"> <img class="comprehensive11" src="img/icon_western_food.png">西餐</span>
+
+                </div>
+                <div class="Guest">
+                    <span class="Guest1">客房设施</span>
+                    <span class="Guest2"> <img class="Guest3" src="img/icon_24water.png">24h热水</span>
+                    <span class="Guest4"><img class="Guest5" src="img/icon_wind.png">吹风机</span>
+                    <span class="Guest6"><img class="Guest7" src="img/icon_hotwater.png">烧水壶</span>
+                    <span class="Guest8"><img class="Guest9" src="img/icon_tv.png">电视机</span>
+                    <span class="Guest10"><img class="Guest11" src="img/icon_wifi.png">wifi</span>
+                </div>
+                <div class="service">
+                    <span class="service1">服务项目</span>
+                    <span class="service2"><img class="service3" src="img/icon_meetingroom.png" >会议室</span>
+                    <span class="service4"><img class="service5" src="img/icon_wakeup.png">叫醒服务</span>
+                    <span class="service6"><img class="service7" src="img/icon_car.png">换机服务</span>
+                    <span class="service8"><img class="service9" src="img/icon_pakge.png">行李寄存</span>
+                </div>
+                <div class="activity">
+                    <span class="activity1">活动设施</span>
+                    <span class="activity2"><img class="activity3" src="img/icon_sport.png">健身房</span>
+                    <span class="activity4"><img class="activity5" src="img/icon_bar.png">酒吧</span>
+                    <span class="activity6"><img class="activity7" src="img/icon_ktv.png">KTV</span>
+                    <span class="activity8"><img class="activity9" src="img/icon_hot spring.png">温泉</span>
+                </div>
+                <span class="policy">酒店政策</span>
+                <div class="policy8">
+                    <span class="policy1">入店和离店</span><span class="policy2">入店时间：</span><span class="po1">14：00以后</span><span class="policy3">离店时间：</span><span class="po2">12：00以前后</span>
+                </div>
+                <div class="policy9">
+                    <span class="policy4">儿童政策</span><span class="policy5">不接受18岁以下客人单独入住</span>
+                </div>
+                <div class="policy10">
+                    <span class="policy6">宠物</span><span class="policy7">不可携带宠物</span>
+                </div>
+            </div>
+            <!--交通位置-->
+            <div class="LOCATION">
+                <span class="LOCATION1">交通位置</span>
+                <div class="LOCATION2" id="container">
+
+                </div>
+
+            </div>
+            <!--用户评价-->
+            <div class="User_evaluation">
+                <span class="User_evaluation1">用户评价</span>
+                <div class="User_evaluation2">
+                    <span class="User_evaluation3">全部</span>
+                    <span class="User_evaluation4">好评</span>
+                    <span class="User_evaluation5">差评</span>
+                    <span class="User_evaluation6">有图</span>
+                </div>
+            </div>
+            <!--评论列表-->
+            <div class="commentlist"></div>
+            <ul class="ul">
+                <li class="liimg"><img src=" img/icon_back_month.png " style="display: inline-block; vertical-align: middle;"></li>
+                <li class="li1 ">1</li>
+                <li class="li2 ">2</li>
+                <li class="li3 ">3</li>
+                <li class="li4 ">4</li>
+                <li class="li5 ">...</li>
+                <li class="li6 ">50</li>
+                <li class="liimg1"><img class="imgss" src=" img/icon_back_month.png " style="display: inline-block; vertical-align: middle;"></li>
+            </ul>
+        </section>
+        <!--页脚-->
+        <footer class="footer">
+            <div class="footers"><span></span>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号- 3</div>
+
+        </footer>
+    </div>
+</body>
+<link href="css/Hotel_Details.css" rel="stylesheet" type="text/css" />
+<script src="js/laydate.js"></script>
+<script src="js/Hotel_Details.js"></script>
+
+
+</html>

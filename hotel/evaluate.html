@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>评价</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+</head>
+
+<body>
+    <div class="divmain">
+        <header class="header">
+            <div class="headerbox">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="evaluatebox">
+            <div class="nameimgs">
+                <img src="img/bg_sign.png" class="images">
+                <div class="rightbox">
+                    <span class="rightbox1">西安开元名都大酒店</span><br>
+                    <span class="rightbox2">豪华大床房</span>
+                </div>
+                <div class="prices">
+                    <span class="prices1">￥</span>
+                    <span class="prices2">788</span>
+                </div>
+            </div>
+            <div class="stars">
+                <span class="allstars">总体评价:</span><img class="stars1" src="img/icon_star_no.png"><img class="stars2" src="img/icon_star_no.png">
+                <img class="stars3" src="img/icon_star_no.png"><img class="stars4" src="img/icon_star_no.png">
+                <img class="stars5" src="img/icon_star_no.png">
+            </div>
+            <div class="exposure_sheet">
+                <span class="leftbos">评价晒单:</span>
+                <textarea class="textare" type="text" style="overflow:hidden" placeholder="酒店是否给力，快来分享你的入住体验吧~"></textarea>
+
+            </div>
+            <!--上传图片-->
+            <div class="allupload">
+                <div class="upload">
+                    <span class="uploadbtn">
+                    <label for="uploadfiles"> <img class="uploadbtnimg" src="img/icon_photo.png"></label> <input type="file" class="uploadfiles" id="uploadfiles">
+                </span>
+                </div>
+                <div class="uploadnew"></div>
+            </div>
+
+        </div>
+        <div class="buttonbox">
+            <button type="button" class="btnssse">提交</button>
+        </div>
+
+    </div>
+</body>
+<link href="css/evaluate.css" rel="stylesheet" type="text/css" />
+<script src="js/evaluate.js"></script>
+
+</html>

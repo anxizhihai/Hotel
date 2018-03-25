@@ -1,0 +1,377 @@
+    body,
+    html {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .maxdiv {
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+    }
+    
+    .header {
+        width: 100%;
+        height: 60px;
+        margin-top: 70px;
+    }
+    
+    .logo {
+        width: 600px;
+        height: 60px;
+    }
+    
+    .logo img {
+        width: 76.8px;
+        height: 25px;
+        padding-top: 18px;
+        padding-left: 215px;
+    }
+    
+    .logo span {
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #5944C3;
+        letter-spacing: 0;
+        position: absolute;
+    }
+    
+    .logoemp {
+        display: inline-block;
+        width: 17px;
+        height: 24px;
+        border-left: 2px solid #5944C3;
+        margin-left: 19.2px;
+        margin-top: 20px;
+    }
+    
+    .logospan {
+        display: inline-block;
+        width: 109px;
+        height: 33px;
+        margin-left: 37px;
+        margin-top: 14px;
+    }
+    
+    .loginreg {
+        width: 150px;
+        height: 60px;
+        float: right;
+        margin-top: -60px;
+    }
+    
+    .backimg {
+        width: 100%;
+        height: 597px;
+        background: url("../img/bg_sign.png");
+        margin-top: 20px;
+        padding-top: 30px;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 60px;
+        margin-top: 81px;
+        margin-bottom: 201px;
+    }
+    
+    .footer p {
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        color: #3E3E3E;
+        letter-spacing: 0;
+        width: 488px;
+        height: 18px;
+        margin-left: 600px;
+        line-height: 60px;
+    }
+    
+    .loginbox {
+        width: 449px;
+        height: 465px;
+        background: #FFFFFF;
+        float: right;
+        margin-right: 150px;
+    }
+    
+    .accountmessage {
+        width: 449px;
+        height: 53.7px;
+    }
+    
+    .accountlogin {
+        display: inline-block;
+        width: 225px;
+        height: 53.7px;
+        background: #5944C3;
+        cursor: pointer;
+    }
+    
+    .accountlogin p {
+        padding-left: 75px;
+        font-family: HiraginoSansGB-W3;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    
+    .messagelogin {
+        display: inline-block;
+        width: 224px;
+        height: 53.7px;
+        background: #CFC8F4;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .messagelogin p {
+        padding-left: 63px;
+        font-family: HiraginoSansGB-W3;
+        font-size: 18px;
+        color: #3E3E3E;
+        letter-spacing: 0;
+    }
+    /*loginform*/
+    
+    .loginform {
+        width: 449px;
+        height: 260px;
+        margin-top: 61.3px;
+    }
+    
+    .user {
+        margin-left: 37px;
+        position: relative;
+    }
+    
+    .passsword {
+        margin-top: 25px;
+        margin-left: 37px;
+        position: relative;
+    }
+    
+    .uesers {
+        width: 379px;
+        height: 40px;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        border-radius: 3px;
+    }
+    
+    .passwords {
+        width: 379px;
+        height: 40px;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        border-radius: 3px;
+    }
+    
+    .user img {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+    }
+    
+    .passsword img {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+    }
+    
+    .forgotpasswords {
+        font-family: HiraginoSansGB-W3;
+        font-size: 14px;
+        color: #3E3E3E;
+        letter-spacing: 0;
+        margin-left: 351px;
+        margin-top: 16px;
+    }
+    
+    .loginbutton {
+        width: 379px;
+        height: 40px;
+        opacity: 0.35;
+        background: #000000;
+        border-radius: 3px;
+        margin-top: 15px;
+        margin-left: 37px;
+        border: 1px solid #000000;
+    }
+    
+    .loginbutton p {
+        font-family: HiraginoSansGB-W3;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 5px;
+    }
+    
+    .register {
+        margin-top: 10px;
+        border-top: 1px solid #000000;
+        position: relative;
+    }
+    
+    .apisp {
+        display: inline-block;
+        font-family: HiraginoSansGB-W3;
+        font-size: 14px;
+        color: #3E3E3E;
+        width: 143px;
+        height: 14px;
+        margin-left: 37px;
+        margin-top: 15px;
+    }
+    
+    .apisp p {
+        font-family: HiraginoSansGB-W3;
+        font-size: 14px;
+        color: #3E3E3E;
+        letter-spacing: 0;
+    }
+    
+    .registerbutton {
+        width: 75px;
+        height: 30px;
+        background: #5944C3;
+        border: 1px solid #5944C3;
+        position: absolute;
+        left: 340px;
+        top: 20px;
+    }
+    
+    .registerbutton p {
+        font-family: HiraginoSansGB-W3;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 2px;
+    }
+    /*fastlogin*/
+    
+    .fastlogin {
+        width: 449px;
+        height: 260px;
+        margin-top: 61.3px;
+        display: none;
+    }
+    
+    .iphone {
+        position: relative;
+    }
+    
+    .iphones {
+        width: 379px;
+        height: 40px;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        margin-left: 37px;
+    }
+    
+    .identifyingcode {
+        position: relative;
+    }
+    
+    .identifyingcodes {
+        width: 262px;
+        height: 40px;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        margin-left: 37px;
+        margin-top: 20px;
+    }
+    
+    .identifyingspan {
+        display: inline-block;
+        width: 105px;
+        height: 40px;
+        background: #D8D8D8;
+        position: absolute;
+        top: 20px;
+        left: 313px;
+        text-align: center;
+    }
+    
+    rect {
+        width: 105px;
+        height: 40px;
+    }
+    
+    svg {
+        width: 105px;
+        height: 40px;
+        text-align: center;
+    }
+    
+    .SMSauthenticationcode {
+        position: relative;
+    }
+    
+    .SMSauthenticationcodes {
+        width: 160px;
+        height: 40px;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        margin-left: 37px;
+        margin-top: 20px;
+    }
+    
+    .checkbutton {
+        width: 105px;
+        height: 40px;
+        background: #5944C3;
+        border-radius: 3px;
+        border: 1px solid #5944C3;
+        position: absolute;
+        top: 20px;
+        left: 200px;
+    }
+    
+    .codebutton {
+        width: 105px;
+        height: 40px;
+        background: #5944C3;
+        border-radius: 3px;
+        border: 1px solid #5944C3;
+        position: absolute;
+        top: 20px;
+        left: 313px;
+    }
+    
+    .codebutton p {
+        font-family: HiraginoSansGB-W3;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 5px;
+    }
+    
+    .fastloginbutton {
+        position: relative;
+    }
+    
+    .fastloginbuttons {
+        width: 379px;
+        height: 40px;
+        opacity: 0.35;
+        background: #000000;
+        border-radius: 3px;
+        border: 1px solid #000000;
+        margin-left: 37px;
+        margin-top: 23px;
+        line-height: 5px;
+    }
+    
+    .fastloginbuttons p {
+        font-family: HiraginoSansGB-W3;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }

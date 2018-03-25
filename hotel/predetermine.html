@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>提交订单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+</head>
+
+<body>
+    <div class="divmain">
+        <header class="header">
+            <div class="headerbox">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section">
+                <div class="left">
+                    <img class="images" src="img/loading.jpg">
+                    <div class="bighotel">西安开元名都大酒店</div>
+                    <div class="address">碑林区友谊东路33号，西藏驻西安办事处家属院内</div>
+                    <div class="phone">商家热线：029-87381606</div>
+                    <div class="messages">
+                        <span class="bigroom">豪华大床房</span>
+                        <span class="Bed_typea">  <span class="Bed_type">床型：</span><span class="size">大床1.8米</span></span>
+                        <span class="areaa">   <span class="area">面积：</span><span class="areas">45</span><span>M²</span></span>
+                        <span class="broadbanda">   <span class="broadband">宽带：</span><span class="broadbands">WiFi</span></span>
+                        <span class="breakfasta">     <span class="breakfast">早餐：</span><span class="breakfasts">双早</span></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="one">
+                        <span class="Predetermined_information">预订信息</span>
+                        <span class="House_name">  <span class="House_names">房型名称：</span><span class="House_big">豪华大床房</span></span>
+                        <span class="Check_intime">   <span class="Check_intimes">入住时间：</span><span class="inspan1"><input type="text" id="Checkin1" class="Checkin1"><span class="weekspan01">星期一</span><img class="imgspan01" src="img/icon_day.png"></span>
+                        <span class="checkspan">至</span>
+                        <span class="inspan2"><input type="text" id="Checkin2" class="Checkin2"><span class="weekspan02">星期一</span><img class="imgspan02" src="img/icon_day.png"></span>
+                        </span>
+                        <span class="Numberofroom"> <span class="Numberofrooms">房间数量：</span><input style="padding-left:10px;" type="tel" class="Numberroom"><span class="redues"><img  src="img/icon_minus.png" style="margin-top:12px; "></span>
+                        <span class="add"><img src="img/icon_plus.png" style="margin-top:12px;"></span>
+                        </span>
+                        <span class="Totalcost">   <span class="Totalcosts">房费总计：</span><span class="cost">¥</span><span class="costs">788</span></span>
+                    </div>
+                    <div class="two">
+                        <span class="Checkininformation">入住信息</span>
+                        <span class="GU">  <span class="Guestname">*</span><span class="Guestnames">客人姓名：</span><input type="text" class="Guests" placeholder="只需要填写一位"></span>
+                        <span class="CT">    <span class="Contactnumber">*</span><span class="Contactnumbers">联系电话：</span><input type="text" class="Contact"></span>
+                    </div>
+                    <div class="thr">
+                        <span class="invoice">如需发票，请向酒店前台索取.</span>
+                        <div class="needpays">
+                            <span class="Needpay"> <span class="Needtopay">需支付：</span><span class="Needtopays">￥</span><input type="text" class="pay"></span><br>
+                            <button type="button" class="Order">提交订单</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--页脚-->
+        <footer class="footer">
+            <div class="footers"><span></span>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号- 3</div>
+
+        </footer>
+    </div>
+</body>
+<link href="css/predetermine.css" rel="stylesheet" type="text/css" />
+<script src="js/laydate.js"></script>
+<script src="js/predetermine.js"></script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>复选框</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+</head>
+<style>
+    div.box {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border: 4px dashed #ccc;
+    }
+    
+    div.box span {
+        color: #999;
+        font-style: italic;
+    }
+    
+    div.content {
+        width: 250px;
+        margin: 10px 0;
+        padding: 20px;
+        border: 2px solid #ff6666;
+    }
+    
+    input[type='checkbox'] {
+        margin: 5px;
+    }
+    
+    input[type='button'] {
+        height: 30px;
+        margin: 10px;
+        padding: 5px 10px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <span>请输入用户名，限定字母、数字或下划线的组合：</span>
+        <div class="content">
+            <span>水果：</span>
+            <input type="checkbox" name="fruit" value="梨子" />梨子
+            <input type="checkbox" name="fruit" value="李子" />李子
+            <input type="checkbox" name="fruit" value="栗子" />栗子
+            <input type="checkbox" name="fruit" value="荔枝" />荔枝
+        </div>
+        <input type="button" value="提交">
+    </div>
+    <input type="radio" class="in1" name="names">
+    <input type="radio" class="in2" name="names">
+    <input type="radio" class="in3" name="names">
+    <button type="button" class="btnbutton">按钮</button>
+</body>
+<script>
+    $(function() {
+        $("input:button").click(function() {
+            text = $("input:checkbox[name='fruit']:checked").map(function(index, elem) {
+                return $(elem).val();
+            }).get().join(',');
+            alert(text);
+        });
+
+
+    })
+    $(".btnbutton").click(function() {
+        $("input[type='radio']").removeAttr('checked');
+        // $("input[type='radio']").removeAttr('checked');
+    })
+</script>
+
+</html>

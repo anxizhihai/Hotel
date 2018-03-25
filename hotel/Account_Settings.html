@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账户设置</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="headerbox">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="Account_information">
+                <div class="title">
+                    <span>账户信息</span>
+                </div>
+                <form>
+                    <div class="Head_portrait">
+                        <span class="portrait">头像:</span>
+                        <label for="myfile">
+                        <div class="position">
+                    <img id="myimg" class="Round_head" src="">
+                    <input type="file" id="myfile" class="far">
+                    <span class="Upload_pictures">上传图片</span>
+                    </div>
+                    </label>
+                    </div>
+                </form>
+                <div class="nickname">
+                    <span class="nicknames">昵称:</span>
+                    <input class="zmnames" type="text" placeholder="请输入昵称">
+                </div>
+                <div class="Phone_number">
+                    <span class="Phone_numbers">手机号码:</span>
+                    <sapn class="Phones"></sapn>
+                </div>
+                <div class="WeChat">
+                    <span class="WeChats">微信:</span>
+                    <button class="WeChatButton" type="button">绑定</button>
+                    <img class="imgWeChat">
+                </div>
+                <div class="password">
+                    <span class="passwords">密码:</span>
+                    <input class="pass" placeholder="请输入密码">
+                    <img src="img/icon_edit.png" class="passpit">
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<link href="css/Account_Settings.css" rel="stylesheet" type="text/css" />
+<script src="js/Account_Settings.js"></script>
+
+</html>

@@ -1,0 +1,286 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.maxdiv {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    margin-top: 70px;
+}
+
+.logo {
+    width: 600px;
+    height: 60px;
+}
+
+.logo img {
+    width: 76.8px;
+    height: 25px;
+    padding-top: 18px;
+    padding-left: 215px;
+}
+
+.logo span {
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #5944C3;
+    letter-spacing: 0;
+    position: absolute;
+}
+
+.logoemp {
+    display: inline-block;
+    width: 17px;
+    height: 24px;
+    border-left: 2px solid #5944C3;
+    margin-left: 19.2px;
+    margin-top: 20px;
+}
+
+.logospan {
+    display: inline-block;
+    width: 109px;
+    height: 33px;
+    margin-left: 37px;
+    margin-top: 14px;
+}
+
+.loginreg {
+    width: 150px;
+    height: 60px;
+    float: right;
+    margin-top: -60px;
+}
+
+.backimg {
+    width: 100%;
+    height: 597px;
+    background: url("../img/bg_sign.png");
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 81px;
+    margin-bottom: 201px;
+}
+
+.footer p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    width: 488px;
+    height: 18px;
+    margin-left: 500px;
+}
+
+.loginbox {
+    width: 753px;
+    height: 550px;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+
+.accountloginp {
+    font-family: HiraginoSansGB-W3;
+    font-size: 18px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    padding-left: 320px;
+    padding-top: 31px;
+}
+
+
+/*registerform*/
+
+.register {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+    position: relative;
+}
+
+.apisp {
+    display: inline-block;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    width: 143px;
+    height: 14px;
+    margin-left: 187px;
+    margin-top: 10px;
+}
+
+.apisp p {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+}
+
+.registerbutton {
+    width: 75px;
+    height: 30px;
+    background: #5944C3;
+    border: 1px solid #5944C3;
+    position: absolute;
+    left: 491px;
+    top: 20px;
+}
+
+.registerbutton p {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 2px;
+}
+
+.fastlogin {
+    width: 449px;
+    height: 260px;
+    margin-top: 61.3px;
+    display: none;
+}
+
+.iphone {
+    position: relative;
+}
+
+.iphones {
+    width: 379px;
+    height: 40px;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-left: 188px;
+}
+
+.identifyingcode {
+    position: relative;
+}
+
+.identifyingcodes {
+    width: 262px;
+    height: 40px;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-left: 188px;
+    margin-top: 20px;
+}
+
+.identifyingspan {
+    display: inline-block;
+    width: 105px;
+    height: 40px;
+    background: #D8D8D8;
+    position: absolute;
+    top: 20px;
+    left: 464px;
+}
+
+.SMSauthenticationcode {
+    position: relative;
+}
+
+.SMSauthenticationcodes {
+    width: 140px;
+    height: 40px;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-left: 188px;
+    margin-top: 20px;
+}
+
+.codebutton {
+    width: 105px;
+    height: 40px;
+    background: #5944C3;
+    border-radius: 3px;
+    border: 1px solid #5944C3;
+    position: absolute;
+    top: 20px;
+    left: 464px;
+}
+
+.codebutton p {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 5px;
+}
+
+.checkbutton {
+    width: 105px;
+    height: 40px;
+    background: #5944C3;
+    border-radius: 3px;
+    border: 1px solid #5944C3;
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+.checkbutton p {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 5px;
+}
+
+.setpasswords {
+    opacity: 0.2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    width: 379px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 188px;
+}
+
+.setpasswordagains {
+    opacity: 0.2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    width: 379px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 188px;
+}
+
+.fastloginbutton {
+    position: relative;
+}
+
+.fastloginbuttons1 {
+    width: 379px;
+    height: 40px;
+    opacity: 0.35;
+    background: #000000;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    margin-left: 188px;
+    margin-top: 23px;
+    line-height: 5px;
+}
+
+.fastloginbuttons1 p {
+    font-family: HiraginoSansGB-W3;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="maxdiv">
+        <div class="bgimg">
+            <!--页头-->
+            <div class="header">
+                <div class="headerbox">
+                    <div class="logobox">
+                        <div class="logo">
+                            <img src="img/logo_white.png">
+                            <span class="logoemp"></span>
+                            <span class="logospan">酒店项目</span>
+                        </div>
+                    </div>
+                    <div class="loginregbox">
+                        <div class="loginreg">
+                            <a class="login">登录</a>
+                            <a class="reg">注册</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <header class="header1">
+                <div class="headerbox1">
+                    <div class="headers">
+                        <div class="logo">
+                            <img src="img/logo_white.png" class="logoimg1">
+                            <span class="emple"></span>
+                            <span class="hotelproject">酒店项目</span>
+                        </div>
+                        <div class="Personal_information">
+                            <img src="img/logo_white_color.png" class="peravator">
+                            <span class="pernames">姓名</span>
+                            <img src="img/icon_pickup.png" class="Arrow">
+                            <span class="My_order">我的订单</span>
+                            <div class="supernatants1"></div>
+                            <div class="supernatant">
+                                <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                                <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                                <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--内容-->
+            <div class="threeinput">
+                <div class="choicecitybox">
+                    <div class="choicecity"> <input id="tresult" class="choicecityin" style="text-indent:1em;" type="text" placeholder="请选择城市"><img class="onclickimg" src="img/icon_location.png"></div>
+                    <!--城市列表-->
+                    <div class="ajaxcity">
+                        <div class="ajaxcitylist" style="display:none">
+                            <div class="navigation_bar">
+                                <span class="navigation1">热门</span>
+                                <span class="navigation2">ABCDEF</span>
+                                <span class="navigation3">GHJK</span>
+                                <span class="navigation4">LMNPQ</span>
+                                <span class="navigation5">RSTW</span>
+                                <span class="navigation6">XYZ</span>
+                            </div>
+                            <div>
+                                <div class="ajaxlist1">
+                                    <div class="ajaxlistrm">
+                                        <ul class="ul-listrm" id="tcontent">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--abcdef-->
+                                <div class="ajaxlist2" style="display:none">
+                                    <div class="ajaxlistaf">
+                                        <ul class="ul-list"></ul>
+                                    </div>
+                                </div>
+                                <!--ghjk-->
+                                <div class="ajaxlist3" style="display:none">
+                                    <div class="ajaxlistgk">
+                                        <ul class="ul-listgk"></ul>
+                                    </div>
+                                </div>
+                                <!--lmnpq-->
+                                <div class="ajaxlist4" style="display:none">
+                                    <div class="ajaxlistlq">
+                                        <ul class="ul-listlq"></ul>
+                                    </div>
+                                </div>
+                                <!--rstw-->
+                                <div class="ajaxlist5" style="display:none">
+                                    <div class="ajaxlistrw">
+                                        <ul class="ul-listrw"></ul>
+                                    </div>
+                                </div>
+                                <!--xyz-->
+                                <div class="ajaxlist6" style="display:none">
+                                    <div class="ajaxlistxz">
+                                        <ul class="ul-listxz"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choicedatebox">
+                    <div class="choicedate"><input class="choicedatein" id="choicedatein" style="text-indent:1em;" type="text" readonly="true" placeholder="请选择日期"><img id="choicedateinimg" src="img/icon_day.png"></div>
+                    <!--日期选择器-->
+                    <div class="choicetimes" style="display:none">
+                        <div class="choicetimes1"></div>
+                        <div class="choicetimes2"> </div>
+                    </div>
+                </div>
+                <div class="choicemessagebox">
+                    <div class="choicemessage"><input class="choicemessagein" style="text-indent:1em;" type="text" placeholder="酒店名称/位置/关键字"></div>
+                </div>
+            </div>
+            <!--搜索-->
+            <div class="search">
+                <button class="btn" type="button">搜索</button>
+            </div>
+        </div>
+        <!--搜索栏-->
+
+        <ul class="ulli">
+            <li class="hothotel">热门酒店</li>
+
+            <li>西安</li>
+            <li>北京</li>
+            <li>上海</li>
+            <li>广州</li>
+            <li>深圳</li>
+            <li>杭州</li>
+            <li>厦门</li>
+            <li>三亚</li>
+            <li>天津</li>
+            <li>成都</li>
+        </ul>
+        <div class="arrows">
+            <ul class="arrowsul">
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+                <li class="supernatants"></li>
+            </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="Dynamicl"></div>
+        <!--页脚-->
+        <footer class="footer">
+            <div class="footers"><span></span>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号- 3</div>
+
+        </footer>
+    </div>
+</body>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="js/laydate.js"></script>
+<script src="js/index.js"></script>
+<script src="js/date.js"></script>
+
+</html>

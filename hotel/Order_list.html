@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>订单列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.js"></script>
+</head>
+
+<body>
+    <div class="divmain">
+        <header class="header">
+            <div class="headerbox">
+                <div class="headers">
+                    <div class="logo">
+                        <img src="img/logo_white.png" class="logoimg">
+                        <span class="emple"></span>
+                        <span class="hotelproject">酒店项目</span>
+                    </div>
+                    <div class="Personal_information">
+                        <img src="img/logo_white_color.png" class="peravator">
+                        <span class="pernames">姓名</span>
+                        <img src="img/icon_pickup.png" class="Arrow">
+                        <span class="My_order">我的订单</span>
+                        <div class="supernatants"></div>
+                        <div class="supernatant">
+                            <div class="supernatant1"><img class="img1" src="img/icon_my.png"><span class="span1">我的订单</span></div>
+                            <div class="supernatant2"><img class="img2" src="img/icon_setting.png"><span class="span2">账户设置</span></div>
+                            <div class="supernatant3"><img class="img3" src="img/icon_out.png"><span class="span3">退出登录</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="Order">
+                <span class="Order1">全部订单</span>
+                <span class="Order2">待付款</span>
+                <span class="Order3">预定中</span>
+                <span class="Order4">已完成</span>
+                <span class="Order5">已取消</span>
+            </div>
+            <div class="preparation">
+                <span class="Order_numbers1">订单号:</span><input type="text" class="Order_number1">
+                <span class="Order_numbers2">旅客:</span><input type="text" class="Order_number2">
+                <span class="Order_numbers3">预定时间段:</span><input type="text" id="Order_numbers3" class="Order_number3">
+                <button type="button" class="btn">查询</button>
+            </div>
+            <div class="Navigationbar">
+                <span class="Navigationbar1">订单号</span>
+                <span class="Navigationbar2">名称</span>
+                <span class="Navigationbar3">下单时间</span>
+                <span class="Navigationbar4">旅客</span>
+                <span class="Navigationbar5">总金额</span>
+                <span class="Navigationbar6">订单状态</span>
+                <span class="Navigationbar7">操作</span>
+            </div>
+            <div class="OrderLists"></div>
+
+            <ul class="ul">
+                <li class="liimg"><img src=" img/icon_back_month.png " style="display: inline-block; vertical-align: middle;"></li>
+                <li class="li1 ">1</li>
+                <li class="li2 ">2</li>
+                <li class="li3 ">3</li>
+                <li class="li4 ">4</li>
+                <li class="li5 ">...</li>
+                <li class="li6 ">50</li>
+                <li class="liimg1"><img class="imgs" src=" img/icon_back_month.png " style="display: inline-block; vertical-align: middle;"></li>
+            </ul>
+
+        </section>
+        <!--页脚-->
+        <footer class="footer">
+            <div class="footers"><span></span>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号- 3</div>
+
+        </footer>
+    </div>
+</body>
+<link href="css/Order_list.css" rel="stylesheet" type="text/css" />
+<script src="js/laydate.js"></script>
+<script src="js/Order_list.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.20.1/moment.js"></script>
+
+</html>

@@ -1,0 +1,298 @@
+body {
+    background: #FFFFFF;
+}
+
+.header {
+    min-width: 900px;
+    height: 60px;
+    background: #5944C3;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.Personal_information {
+    float: right;
+    width: 300px;
+    height: 60px;
+    position: relative;
+}
+
+.headers:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.headers {
+    min-width: 600px;
+}
+
+.peravator {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 10px;
+    left: 1px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.pernames {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.Arrow {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 22px;
+    left: 120px;
+    transition-property: height;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.Arrow:hover {
+    transform: rotate(180deg);
+    transition: transform 2s;
+}
+
+.My_order {
+    position: absolute;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top: 20px;
+    left: 200px;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+    width: 400px;
+    height: 60px;
+}
+
+.logoimg {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.emple {
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    border-left: 2px solid #FFFFFF;
+}
+
+.hotelproject {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    float: right;
+    margin-top: 13px;
+    margin-right: 120px;
+}
+
+.supernatant {
+    width: 109px;
+    height: 124.7px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.supernatants {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border-width: 10px;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-style: solid;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.supernatant1,
+.supernatant2,
+.supernatant3 {
+    width: 109px;
+    height: 30px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.img1,
+.img2,
+.img3 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.span1,
+.span2,
+.span3 {
+    float: right;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 20px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.Order_status {
+    width: 698px;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.18);
+    margin: 0 auto;
+    margin-top: 33px;
+}
+
+.information {
+    width: 77px;
+    height: 18px;
+    padding-left: 34px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 18px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    padding-top: 39px;
+}
+
+.Ordernumber,
+.Hotel,
+.apartment,
+.Predeterminedtime {
+    width: 371px;
+    height: 14px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    margin-left: 61px;
+    margin-top: 21px;
+}
+
+.Timeperiod {
+    width: 371px;
+    height: 14px;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    margin-left: 49px;
+    margin-top: 21px;
+    padding-bottom: 24px;
+}
+
+.Ordernumber2,
+.Hotel2,
+.apartment2,
+.Predeterminedtime2,
+.Timeperiod2 {
+    margin-left: 10px;
+}
+
+.hr1 {
+    width: 695px;
+    height: 1px;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+
+.Checkininformations {
+    font-family: HiraginoSansGB-W3;
+    font-size: 18px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    margin-top: 23px;
+    margin-left: 33px;
+}
+
+.Guestname {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    margin-top: 23px;
+    padding-left: 61px;
+}
+
+.Phonenumber {
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #3E3E3E;
+    letter-spacing: 0;
+    margin-top: 16px;
+    padding-left: 61px;
+    margin-bottom: 23px;
+}
+
+.Guestname2,
+.Phonenumber2 {
+    margin-left: 10px;
+}
+
+.hr2 {
+    width: 695px;
+    height: 1px;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+
+.footer {
+    min-width: 900px;
+    height: 60px;
+    background: #5944C3;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    clear: both;
+}
+
+.Cancellations {
+    width: 154px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 454px;
+}
+
+.Cancellation {
+    width: 154px;
+    height: 40px;
+    background: #5944C3;
+    border-radius: 3px;
+    margin-top: 34px;
+    border: 1px solid #5944C3;
+    font-family: HiraginoSansGB-W3;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    cursor: pointer;
+}

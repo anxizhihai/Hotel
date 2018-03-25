@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="maxdiv">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo_white_color.png">
+                <span class="logoemp"></span>
+                <span class="logospan">酒店项目</span>
+            </div>
+            <div class="backimg">
+                <div class="loginbox">
+                    <div class="accountmessage">
+                        <p class="accountloginp">注册APIS账号</p>
+                    </div>
+                    <form class="loginform" id="loginform">
+                        <div class="iphone"><input style="text-indent:1em;" type="uesername" class="iphones" id="phone" placeholder="手机号码"></div>
+                        <div class="identifyingcode"><input style="text-indent:1em;" class="identifyingcodes" id="imgCaptcha" type="text" placeholder="请输入右侧图文验证码"><span class="identifyingspan" id="captcha"></span></div>
+                        <div class="SMSauthenticationcode"> <input style="text-indent:1em;" class="SMSauthenticationcodes" id="smsCaptcha1" type="number" placeholder="输入短信验证码"><button type="button" class="codebutton"><p>获取验证码</p></button><button type="button" class="checkbutton"><p>查看</p></button></div>
+                        <div class="setpassword"><input style="text-indent:1em;" type="password" class="setpasswords" id="password" placeholder="输入6~32位密码"></div>
+                        <div class="setpasswordagain"><input style="text-indent:1em;" type="password" class="setpasswordagains" id="password1" placeholder="请再输入一次"></div>
+                        <div class="fastloginbutton"><button type="button" class="fastloginbuttons1" id="fastloginbuttons1"><p>注册</p></button></div>
+
+                    </form>
+
+                    <div class="register">
+                        <span class="apisp"><p>还没有APIS账号吗？</p></span>
+                        <button type="button" class="registerbutton" id="registerbutton"><p>登录</p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号-3</p>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="css/register.css" rel="stylesheet" type="text/css" />
+<script src="js/register.js"></script>
+
+</html>
