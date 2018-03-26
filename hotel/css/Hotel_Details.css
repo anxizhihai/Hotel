@@ -1,5 +1,11 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
 .header {
-    min-width: 1400px;
+    min-width: 600px;
     height: 60px;
     background: #5944C3;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.20);
@@ -153,6 +159,10 @@
     margin-right: 20px;
     margin-top: 1px;
     cursor: pointer;
+}
+
+section {
+    width: 100%;
 }
 
 .namemessages {

@@ -11,7 +11,7 @@ html {
 }
 
 .bgimg {
-    width: 1536px;
+    width: 100%;
     height: 322px;
     background: url("../img/jiudian.jpg");
     background-repeat: no-repeat;
@@ -191,26 +191,32 @@ html {
 }
 
 .threeinput {
-    width: 1400px;
+    width: 1000px;
     height: 60px;
     margin: 0 auto;
     margin-top: 80px;
-    position: relative;
+}
+
+.threeinput:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .choicecitybox {
-    position: absolute;
-    left: 300px;
+    float: left;
 }
 
 .choicedatebox {
-    position: absolute;
-    left: 600px;
+    float: right;
+    margin-right: 120px;
 }
 
 .choicemessagebox {
-    position: absolute;
-    left: 900px;
+    float: right;
 }
 
 

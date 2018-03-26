@@ -261,7 +261,6 @@ function Metro() {
 
 
 $(".dstation").on("click", ".Metro1", function() {
-
     var Uarry = $(".Metro1"); //获取所有的ul元素
     var count = $(this).index(); //获取ul的下标  
     var Tresult = Uarry.eq(count).text();
@@ -272,11 +271,10 @@ $(".dstation").on("click", ".Metro1", function() {
     $(".Metro").eq(counts).siblings().hide();
 });
 $(".dstation").on("click", "li ", function() {
-
-    var Uarry = $(".sat li"); //获取所有的li元素
-    var count = $(this).index(); //获取li的下标  
-    var Tresult = Uarry.eq(count).text();
-    $(".choicemessagein").val(Tresult);
+    // var Uarry = $(".sat li"); //获取所有的li元素
+    // var count = $(this).index(); //获取li的下标  
+    // var Tresult = Uarry.eq(count).text();
+    $(".choicemessagein").val($(this).html());
 
 });
 
@@ -786,7 +784,7 @@ function getValue3() {
     }
 }
 
-var page;
+
 //懒加载
 //页面一打开整个西安的酒店
 function lazyLoad() {
@@ -795,6 +793,9 @@ function lazyLoad() {
         var loading = document.getElementById("loading");
         if (loading.getBoundingClientRect().top + loading.offsetHeight < document.documentElement.clientHeight) {
             // hotelist(page++);
+            $(".mapone").css("position", "fixed");
+            $(".mapone").css("right", "230px");
+            $(".mapone").css(".bottom", "30px");
         }
     }
 }
