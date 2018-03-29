@@ -558,9 +558,22 @@ section {
     letter-spacing: 0;
     width: 70px;
     height: 29px;
-    line-height: 29px;
     border: 1px solid #5944C3;
     margin-left: 40px;
+}
+
+.deluxe_king99 {
+    width: 70px;
+    height: 29px;
+    opacity: 0.25;
+    background: #000000;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 40px;
+    border: 1px solid #000000;
 }
 
 .Hotel_Introduction {
@@ -1075,4 +1088,12 @@ section {
 .activity7,
 .activity9 {
     float: left;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+#list li {
+    list-style-type: none;
 }

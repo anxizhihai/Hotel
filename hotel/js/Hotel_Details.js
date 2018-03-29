@@ -220,7 +220,7 @@ function comment(page, sort) {
                     str += '<div class="timespitc">';
                     str += '<div class="create"><span class="starsss"><img src="img/icon_star.png"><img src="img/icon_star.png"><img src="img/icon_star.png"><img src="img/icon_star.png"><img src="img/icon_star.png"></span><span class="create_time">' + comments[i].create_time + '</span></div>';
                     str += '<div class="content"><span class="contents">' + comments[i].content + '</span></div>';
-                    if (comments[i].picture !== "") {
+                    if (comments[i].picture.length !== 0) {
                         str += '<div class="picture"><img class="pictures" src="' + img_url + comments[i].picture["0"] + '"><img class="picturess" src="' + img_url + comments[i].picture["1"] + '"></div>'
                     }
                     str += '</div>';
@@ -329,9 +329,13 @@ function hotelroom(checkTime) {
                     str += '<span class="deluxe_king6">' + hotelrooms[i].window + '</span>';
                     str += '<span class="deluxe_king7">' + hotelrooms[i].cancelOfRules + '</span>';
                     str += '<span class="deluxe_king8"><span>¥</span>' + hotelrooms[i].price + '</span>';
-                    str += '<a target = "_blank" href="predetermine.html?name=' + hotelrooms[i].name + '&type=' + hotelrooms[i].bedType + '&area=' + hotelrooms[i].area + '&wifi=' + hotelrooms[i].wayOfInternet + '&price=' + hotelrooms[i].price + '&breakfast=' + hotelrooms[i].breakfast + '&hotelname=' + hotels + '&addressone=' + addressone + '&iphonesone=' + iphonesone + '&imgs=' + imgs + '&hotelid=' + hotelId + '&times1=' + times1 + '&times2=' + times2 + '&week1=' + week1 + '&week2=' + week2 + '">';
-                    str += '<button type="button" class="deluxe_king9">预定</button>';
-                    str += '</a>';
+                    if (hotelrooms[i].canCheckIn == false) {
+                        str += '<button type="button" class="deluxe_king99">已预定</button>';
+                    } else {
+                        str += '<a target = "_blank" href="predetermine.html?name=' + hotelrooms[i].name + '&type=' + hotelrooms[i].bedType + '&area=' + hotelrooms[i].area + '&wifi=' + hotelrooms[i].wayOfInternet + '&price=' + hotelrooms[i].price + '&breakfast=' + hotelrooms[i].breakfast + '&hotelname=' + hotels + '&addressone=' + addressone + '&iphonesone=' + iphonesone + '&imgs=' + imgs + '&hotelid=' + hotelId + '&times1=' + times1 + '&times2=' + times2 + '&week1=' + week1 + '&week2=' + week2 + '">';
+                        str += '<button type="button" class="deluxe_king9">预定</button>';
+                        str += '</a>';
+                    }
                     str += '</div>'
                 }
                 $(".house").append(str);
@@ -465,3 +469,8 @@ function addition() {
     }
 
 }
+$('#nav').on('click', 'li', function(e) {
+    var target = e.target;
+    var id = $(target).data("to");
+    $('html,body').animate({ scrollTop: $('#' + id).offset().top }, 800);
+});
